@@ -13,7 +13,6 @@ int *array;
        int xLen=k*arr.size();
 
 	array = (int*) malloc(xLen*sizeof(int));
-      // std::cout <<"Length of the vector :" <<xLen << std::endl;
     int x=0;
       int shiftB=0;
 
@@ -21,7 +20,6 @@ int *array;
 for(int y =0 ; y < k;y++){
 while(x<arr.size()){
              array[shiftB+x] = arr[x];
-         std::cout <<"***"<<arr.size()<< std::endl;
 
        x++;}
              shiftB=shiftB+arr.size();
@@ -38,7 +36,6 @@ while(x<arr.size()){
         if (max_ending_here < 0)
             max_ending_here = 0;
     }
-
 
 
 
